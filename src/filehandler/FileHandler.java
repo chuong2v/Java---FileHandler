@@ -50,6 +50,7 @@ public class FileHandler {
             bos.write(baos.toByteArray());
             bos.flush();
             bos.close();
+            return;
         }
     }
 
@@ -73,6 +74,7 @@ public class FileHandler {
             outToClient.write(mybytearray, 0, mybytearray.length);
             outToClient.flush();
             outToClient.close();
+            return;
         }
     }
 }
